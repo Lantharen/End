@@ -1,0 +1,127 @@
+.intro{
+    margin-bottom: 130px;
+    padding-bottom: 260px;
+    background-color: darkorange;
+    background-size: cover;
+    padding-top: 263px;
+}
+
+.intro_subtitle{
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+p {
+    text-align: center;
+
+}
+.services {
+    padding-top: 130px;
+    margin-top: 130px;
+    background-color: #0b7596;
+}
+.services > h2 {
+    padding-bottom: 50px;
+    color: white;
+    text-align: center;
+}
+.portfolio > h5 {
+    margin-top: 130px;
+}
+.portfolio > h2 {
+    margin-bottom: 40px;
+}
+.welcome {
+    padding: 250px 0 250px 0;
+    background: url("../img/bg-image-pic.jpg");
+}
+.welcome > h2 {
+    color: white;
+}
+.first_pic{
+    font-weight: bold;
+    color: ghostwhite;
+    padding-top: 300px;
+    padding-left: 300px;
+    width: 100%;
+}
+.block1{
+    background-image: url("../img/place-11.jpg");
+}
+.block2{
+    background-image: url("../img/place-6.jpg");
+}
+.block3{
+    background-image: url("../img/place-22.jpg");
+}
+.block4{
+    background-image: url("../img/road.jpg");
+}
+
+.buttons > h3 {
+    color: white;
+    text-align: center;
+    padding-top: 130px;
+    margin: 0;
+}
+.buttons {
+    margin-top: 130px;
+    background-color: rgb(30, 112, 110);
+    width: auto;
+    height: auto;
+}
+.button-group {
+    text-align: center;
+    margin-top: 15px;
+    padding-bottom: 130px;
+}
+.btn {
+    width: 140px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+}
+.footer > img {
+    width: 1920px;
+    height: 600px;
+}
+.footer > p {
+    padding-top: 150px;
+}
+.twit {
+    display:inline-block;
+    vertical-align:bottom;
+    width: 32px;
+    height: 32px;
+    margin:0 20px 0px 20px;
+    padding:0;
+    outline:none;
+    background:url("../img/twit32.png") no-repeat;
+}
+.inst {
+    display:inline-block;
+    vertical-align:bottom;
+    width: 32px;
+    height: 32px;
+    margin:0 20px 0px 0;
+    padding:0;
+    outline:none;
+    background:url("../img/inst1.png") no-repeat;
+}
+.fb {
+    display:inline-block;
+    vertical-align:bottom;
+    width:32px;
+    height:32px;
+    margin:0 20px 0px 0;
+    padding:0;
+    outline:none;
+    background:url("../img/face32.png") no-repeat;
+}
+
+
+
+
+

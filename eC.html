@@ -1,0 +1,703 @@
+<!doctype html>
+<html lang="uk">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>eCommerce — Головна сторінка</title>
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="icons/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/try_2.css">
+</head>
+<body>
+
+<header>
+
+    <div class="container">
+
+        <div class="row pt-xl-2 align-items-xl-center">
+
+            <!-- Logo -->
+            <div class="col-xl-auto">
+                <a href="/">
+                    <img src="img/logo_90x30.jpg" alt="Logo">
+                </a>
+            </div>
+
+            <!-- City Dropdown -->
+            <div class="col-xl-auto">
+                <div class="dropdown px-xl-3">
+                    <button class="btn btn-sm btn-light dropdown-toggle"
+                            type="button"
+                            id="cityDropdown"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                        Київ
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="cityDropdown">
+                        <li><a class="dropdown-item" href="#">Київ</a></li>
+                        <li><a class="dropdown-item" href="#">Вінниця</a></li>
+                        <li><a class="dropdown-item" href="#">Запорожье</a></li>
+                        <li><a class="dropdown-item" href="#">Одеса</a></li>
+                        <li><a class="dropdown-item" href="#">Миколаїв</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Additional Menu -->
+            <div class="col-xl">
+                <ul class="list-inline mb-xl-0 text-center">
+                    <li class="list-inline-item small">
+                        <a href="#" class="btn btn-sm border-0">Магазини</a>
+                    </li>
+                    <li class="list-inline-item small">
+                        <div class="dropdown">
+                            <button class="btn btn-sm border-0 dropdown-toggle"
+                                    type="button"
+                                    id="loyaltyDropdown"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                Програма лояльності
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="loyaltyDropdown">
+                                <li><a class="dropdown-item" href="#">Про програму лояльності</a></li>
+                                <li><a class="dropdown-item" href="#">Подарункові сертифікати</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="list-inline-item small">
+                        <div class="dropdown">
+                            <button class="btn btn-sm border-0 dropdown-toggle"
+                                    type="button"
+                                    id="clientDropdown"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                Клієнтам
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="clientDropdown">
+                                <li><a class="dropdown-item" href="#">Уціненні товари</a></li>
+                                <li><a class="dropdown-item" href="#">Доставка та оплата</a></li>
+                                <li><a class="dropdown-item" href="#">Brain Блог</a></li>
+                                <li><a class="dropdown-item" href="#">Публічна омерта</a></li>
+                                <li><a class="dropdown-item" href="#">Контакти</a></li>
+                                <li><a class="dropdown-item" href="#">Всі бренди</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="list-inline-item small">
+                        <div class="dropdown">
+                            <button class="btn btn-sm border-0 dropdown-toggle"
+                                    type="button"
+                                    id="serviceDropdown"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                Сервіс
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="serviceDropdown">
+                                <li><a class="dropdown-item" href="#">Сервісні центри</a></li>
+                                <li><a class="dropdown-item" href="#">Сервіс і гарантія</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="list-inline-item small">
+                        <a href="#" class="btn btn-sm border-0 text-danger">Акції</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Auth Buttons -->
+            <div class="col-xl-auto">
+                <button class="btn btn-sm btn-light">
+                    <i class="bi bi-box-arrow-in-right"></i>
+                    Увійти
+                </button>
+            </div>
+
+        </div>
+
+        <div class="row pt-xl-2 align-items-xl-center">
+
+            <!-- Catalog Button-->
+            <div class="col-xl-3">
+                <button class="e--btn-catalog d-flex w-100 justify-content-center align-items-center btn btn-primary text-uppercase">
+                    <i class="bi bi-list"></i>
+                    Каталог товарів
+                </button>
+            </div>
+
+            <!-- Search Form -->
+            <div class="col-xl">
+                <form action="/">
+                    <div class="input-group">
+                        <input type="search" class="form-control" placeholder="Знайти..."
+                               aria-describedby="btn-search-addon">
+                        <button class="btn btn-outline-secondary" type="button" id="btn-search-addon">
+                            <i class="bi bi-search"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+            <!-- User Buttons -->
+            <div class="col-xl-auto">
+                <button type="button" class="position-relative btn btn-outline-dark border-0">
+                    <i class="bi bi-heart-fill"></i>
+                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">0</span>
+                </button>
+                <button type="button" class="position-relative mx-4 btn btn-outline-dark border-0">
+                    <i class="bi bi-arrow-left-right"></i>
+                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">0</span>
+                </button>
+                <button type="button" class="position-relative btn btn-outline-dark border-0">
+                    <i class="bi bi-cart-fill"></i>
+                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">0</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</header>
+<main>
+    <div class="container-xxl">
+        <div class="row">
+            <div class="col-auto bg-light p-0 m-3">
+                <div class="list-group">
+                    <a href="#" class="list-group-item list-group-item-action bi bi-bootstrap-fill">
+                        Компьютеры и обслуживание
+                        <i class="bi bi-caret-right-fill"></i>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action bi bi-bootstrap-fill">
+                        Комплектующие
+                        <i class="bi bi-caret-right-fill"></i>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action bi bi-bootstrap-fill">
+                        Смартфоны и планшеты
+                        <i class="bi bi-caret-right-fill"></i>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action bi bi-bootstrap-fill">
+                        Телевизоры и проэкторы
+                        <i class="bi bi-caret-right-fill"></i>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action bi bi-bootstrap-fill">
+                        Все для печати и офиса
+                        <i class="bi bi-caret-right-fill"></i>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action bi bi-bootstrap-fill">
+                        Сетевое оборудование
+                        <i class="bi bi-caret-right-fill"></i>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action bi bi-bootstrap-fill">
+                            Наушники и акустика
+                            <i class="bi bi-caret-right-fill"></i>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action bi bi-bootstrap-fill">
+                            Гаджеты, фото и видео
+                            <i class="bi bi-caret-right-fill"></i>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action bi bi-bootstrap-fill">
+                            Бытовая техника
+                            <i class="bi bi-caret-right-fill"></i>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action bi bi-bootstrap-fill">
+                            Товары для детей
+                            <i class="bi bi-caret-right-fill"></i>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action bi bi-bootstrap-fill">
+                            Умный дом и охрана
+                            <i class="bi bi-caret-right-fill"></i>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action bi bi-bootstrap-fill">
+                            Иструменты
+                            <i class="bi bi-caret-right-fill"></i>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action bi bi-bootstrap-fill">
+                            VINGA
+                            <i class="bi bi-caret-right-fill"></i>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action bi bi-book fw-bold">
+                            Все категории
+                        </a>
+
+                </div>
+            </div>
+            <div class="col-6 m-4">
+                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./img/bacj1.jpg" class="d-block w-100" alt="Earth">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>First slide label</h5>
+                                <p>Some representative placeholder content for the first slide.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/pic-2.jpg" class="d-block w-100" alt="Earth">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Second slide label</h5>
+                                <p>Some representative placeholder content for the second slide.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/pic-3.jpg" class="d-block w-100" alt="Earth">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Third slide label</h5>
+                                <p>Some representative placeholder content for the third slide.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+            <div class="col-3 mt-4">
+                <div id="carouselExampleDark" class="carousel carousel-light slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                                aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="10000">
+                            <img src="./img/bacj1.jpg" class="d-block w-100" alt="dark">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>First slide label</h5>
+                                <p>Some representative placeholder content for the first slide.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2000">
+                            <img src="./img/pic-2.jpg" class="d-block w-100" alt="dark">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Second slide label</h5>
+                                <p>Some representative placeholder content for the second slide.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/pic-3.jpg" class="d-block w-100" alt="dark">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Third slide label</h5>
+                                <p>Some representative placeholder content for the third slide.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                            data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                            data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                <div class="mt-3">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./img/bacj1.jpg" class="d-block w-100" alt="Lattern">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./img/pic-2.jpg" class="d-block w-100" alt="Lattern">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./img/pic-3.jpg" class="d-block w-100" alt="Lattern">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                                data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                                data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<div class="container-xxl">
+    <div class="row text-black my-5">
+        <h2>Умные покупки</h2>
+    </div>
+    <div class="row justify-content-center mb-2 mb-2">
+        <div class="col-xl-auto">
+            <div class="card" style="width: 15rem;">
+                <a href="#">
+                    <img src="./img/phone-3.jpg" class="card-img-top" alt="Phone1">
+                </a>
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <a href="#" class="card-text"><p>Some quick example text to build on the card title and make up the
+                        bulk of the card's content.</p></a>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-auto">
+            <div class="card" style="width: 15rem;">
+                <a href="#">
+                    <img src="./img/phone-3.jpg" class="card-img-top" alt="Phone1">
+                </a>
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <a href="#" class="card-text"><p>Some quick example text to build on the card title and make up the
+                        bulk of the card's content.</p></a>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-auto">
+            <div class="card" style="width: 15rem;">
+                <a href="#">
+                    <img src="./img/phone-3.jpg" class="card-img-top" alt="Phone1">
+                </a>
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <a href="#" class="card-text"><p>Some quick example text to build on the card title and make up the
+                        bulk of the card's content.</p></a>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-auto">
+            <div class="card" style="width: 15rem;">
+                <a href="#">
+                    <img src="./img/phone-3.jpg" class="card-img-top" alt="Phone1">
+                </a>
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <a href="#" class="card-text"><p>Some quick example text to build on the card title and make up the
+                        bulk of the card's content.</p></a>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-auto">
+            <div class="card" style="width: 15rem;">
+                <a href="#">
+                <img src="./img/phone-3.jpg" class="card-img-top" alt="Phone1">
+                </a>
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <a href="#" class="card-text"><p>Some quick example text to build on the card title and make up the
+                        bulk of the card's content.</p></a>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row justify-content-center mb-2">
+        <div class="col-xl-auto">
+            <div class="card" style="width: 15rem;">
+                <a href="#">
+                    <img src="./img/phone-2.jpg" class="card-img-top" alt="Phone1">
+                </a>
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <a href="#" class="card-text"><p>Some quick example text to build on the card title and make up the
+                        bulk of the card's content.</p></a>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-auto">
+            <div class="card" style="width: 15rem;">
+                <a href="#">
+                    <img src="./img/phone-2.jpg" class="card-img-top" alt="Phone1">
+                </a>
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <a href="#" class="card-text"><p>Some quick example text to build on the card title and make up the
+                        bulk of the card's content.</p></a>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-auto">
+            <div class="card" style="width: 15rem;">
+                <a href="#">
+                    <img src="./img/phone-2.jpg" class="card-img-top" alt="Phone1">
+                </a>
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <a href="#" class="card-text"><p>Some quick example text to build on the card title and make up the
+                        bulk of the card's content.</p></a>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-auto">
+            <div class="card" style="width: 15rem;">
+                <a href="#">
+                    <img src="./img/phone-2.jpg" class="card-img-top" alt="Phone1">
+                </a>
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <a href="#" class="card-text"><p>Some quick example text to build on the card title and make up the
+                        bulk of the card's content.</p></a>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-auto">
+            <div class="card" style="width: 15rem;">
+                <a href="#">
+                <img src="./img/phone-2.jpg" class="card-img-top" alt="Phone1">
+                </a>
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <a href="#" class="card-text"><p>Some quick example text to build on the card title and make up the
+                        bulk of the card's content.</p></a>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row justify-content-center mb-2">
+        <div class="col-xl-auto">
+            <div class="card" style="width: 15rem;">
+                <a href="#">
+                    <img src="./img/phone-4.jpg" class="card-img-top" alt="Phone1">
+                </a>
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <a href="#" class="card-text"><p>Some quick example text to build on the card title and make up the
+                        bulk of the card's content.</p></a>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-auto">
+            <div class="card" style="width: 15rem;">
+                <a href="#">
+                    <img src="./img/phone-4.jpg" class="card-img-top" alt="Phone1">
+                </a>
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <a href="#" class="card-text"><p>Some quick example text to build on the card title and make up the
+                        bulk of the card's content.</p></a>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-auto">
+            <div class="card" style="width: 15rem;">
+                <a href="#">
+                    <img src="./img/phone-4.jpg" class="card-img-top" alt="Phone1">
+                </a>
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <a href="#" class="card-text"><p>Some quick example text to build on the card title and make up the
+                        bulk of the card's content.</p></a>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-auto">
+            <div class="card" style="width: 15rem;">
+                <a href="#">
+                    <img src="./img/phone-4.jpg" class="card-img-top" alt="Phone1">
+                </a>
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <a href="#" class="card-text"><p>Some quick example text to build on the card title and make up the
+                        bulk of the card's content.</p></a>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-auto">
+            <div class="card" style="width: 15rem;">
+                <a href="#">
+                    <img src="./img/phone-4.jpg" class="card-img-top" alt="Phone1">
+                </a>
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <a href="#" class="card-text"><p>Some quick example text to build on the card title and make up the
+                        bulk of the card's content.</p></a>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row justify-content-center mb-2">
+        <div class="col-xl-auto">
+            <div class="card" style="width: 15rem;">
+                <a href="#">
+                    <img src="./img/phone-5.jpg" class="card-img-top" alt="Phone1">
+                </a>
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <a href="#" class="card-text"><p>Some quick example text to build on the card title and make up the
+                        bulk of the card's content.</p></a>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-auto">
+            <div class="card" style="width: 15rem;">
+                <a href="#">
+                    <img src="./img/phone-5.jpg" class="card-img-top" alt="Phone1">
+                </a>
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <a href="#" class="card-text"><p>Some quick example text to build on the card title and make up the
+                        bulk of the card's content.</p></a>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-auto">
+            <div class="card" style="width: 15rem;">
+                <a href="#">
+                    <img src="./img/phone-5.jpg" class="card-img-top" alt="Phone1">
+                </a>
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <a href="#" class="card-text"><p>Some quick example text to build on the card title and make up the
+                        bulk of the card's content.</p></a>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-auto">
+            <div class="card" style="width: 15rem;">
+                <a href="#">
+                <img src="./img/phone-5.jpg" class="card-img-top" alt="Phone1">
+                </a>
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <a href="#" class="card-text"><p>Some quick example text to build on the card title and make up the
+                        bulk of the card's content.</p></a>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-auto">
+            <div class="card" style="width: 15rem;">
+                <a href="#">
+                    <img src="./img/phone-5.jpg" class="card-img-top" alt="Phone1">
+                </a>
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <a href="#" class="card-text"><p>Some quick example text to build on the card title and make up the
+                        bulk of the card's content.</p></a>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+<div class="container">
+    <div class="row justify-content-center mt-4">
+        <button type="button" class="btn btn-primary text-uppercase fw-bold" style="width: 15rem;">Все товары</button>
+    </div>
+</div>
+<footer class="bg-dark text-light mt-lg-5">
+    <div class="container p-0">
+        <div class="row gx-5 justify-content-center">
+            <!-- Доделать подвал сайта -->
+            <div class="col-xl-2">
+                <div class="p-3 text-uppercase fw-semibold">Company</div>
+                <a href="#"
+                   class="px-3 text-decoration-none">Corporate Client</a>
+                <a href="#"
+                   class="px-3 text-decoration-none">Resale Client</a>
+            </div>
+            <div class="col-xl-2">
+                <div class="p-3 text-uppercase fw-semibold">Buyers</div>
+                <a href="#"
+                   class="px-3 text-decoration-none">Service and garanty</a>
+                <a href="#"
+                   class="px-3 text-decoration-none">Catch and pay</a>
+                <a href="#"
+                   class="px-3 text-decoration-none">Loyalty program</a>
+                <a href="#"
+                   class="px-3 text-decoration-none">Gift sertificate</a>
+            </div>
+            <div class="col-xl-2 mx-4">
+                <div class="p-3 text-uppercase fw-semibold">Support</div>
+                <a href="#"
+                   class="px-3 text-decoration-none">Site map</a>
+            </div>
+            <div class="col-xl-2">
+                <div class="p-3 text-uppercase fw-semibold">Store</div>
+                <a href="#"
+                   class="px-3 text-decoration-none">Chain of stores</a>
+                <a href="#"
+                   class="px-3 text-decoration-none">Service entrance</a>
+            </div>
+            <div class="col-xl-auto text-uppercase fw-bold p-3">
+                Обратная связь
+                <div class="col-auto">
+                    <div class="row align-items-center">
+                        <div class="col-xl-auto">
+                            <div class="col mx-4 mt-4 pt-2">Служба поддержки</div>
+                            <div class="col mx-4 pb-4">0 800 555 11 22</div>
+                            <div class="col pb-4">График работы колл-центра</div>
+                            <div class="col fw-light"><i>ПН-ПТ: с 09:00 до 19:00</i></div>
+                            <div class="col fw-light"><i>СБ-ВС: с 10:00 до 18:00</i></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row border-top">
+            <div class="col-xl p-0">
+                <div class="logo my-3">
+                    <img src="img/visa_90x30.png" alt="visa">
+                    <img src="img/mc_90x30.jpg" alt="masterCard" class="mx-4">
+                    <img src="img/privat_90x30.jpg" alt="privatBank">
+                </div>
+            </div>
+            <div class="col-xl-auto p-0">
+                <div class="copyright mt-3">
+                    <p class="copyright_item">
+                        © 1996­ - 2022 ООО "Приватинвест", "BRAIN Computers™". Всі права захищені</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+</body>
+</html>
+
